@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextUtils</title>
+</head>
+<body>
+<h1> Welcome to the text analyzer</h1>
+<h1>Enter your text below</h1>
+<form action ='/analyze' method="post">
+     {% csrf_token %}
+    <textarea name='text' style='margin: 0px; width: 521px; height: 126px;'> </textarea><br>
+    <input type="checkbox" name="removepunc">Remove Punctuations <br>
+     <input type="checkbox" name="captalize">Upper Case <br>
+    <input type="checkbox" name="nlr">Remove New Line <br>
+    <input type="checkbox" name="rs">Remove extra Space  <br>
+    <input type="checkbox" name="cc">Count the character <br>
+    <button type ='submit'>Analyze Text</button>
+</form>
+
+</body>
+</html>
